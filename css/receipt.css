@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Lato',sans-serif;
+}
+body{
+    background-color:#1d1d1d;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-size:0.8750em;
+}
+.logo{
+    height:140px;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius:25px;
+}
+.bold{
+    font-weight:900;
+}
+.container{
+    background:#f1f1f1;
+    padding:30px;
+}
+.invoice-container{
+    width:700px;
+    max-width:100%;
+    border: 3px solid #96D4D4
+}
+.invoice-container .header .logo-invoice-container,
+.invoice-container .header .bill-total-container{
+    display:flex;
+    justify-content:space-between;
+    padding:40px;
+}
+.invoice-container .header .logo-sec{
+    display:flex;
+    align-items: center;
+}
+.invoice-container .header .logo-sec .title-container{
+    margin-left: 5px;
+}
+.invoice-container .header .logo-sec .title-container .title{
+    text-transform: uppercase;
+    font-size: 1.125em;
+    color: #4fc3c3;
+}
+.invoice-container .header .logo-sec .title-container .sub-title{
+    font-size: 0.75em;
+}
+.invoice-container .header .invoice-sec,
+.invoice-container .header .total-container{
+    text-align: right;
+}
+.invoice-container .header .invoice-sec .invoice{
+    font-size:1.75em;
+    color:#4fc3c3;
+}
+.invoice-container .header .invoice-sec .invoice-number,
+.invoice-container .header .invoice-sec .date{
+    display:flex;
+    width:100%;
+}
+.invoice-container .header .invoice-sec .invoice-number span:first-child,
+.invoice-container .header .invoice-sec .date span:first-child{
+    width:70px;
+    text-align:left;
+}
+.invoice-container .header .bill-total-container .name,
+.invoice-container .header .bill-total-container .price{
+    font-size:1.25em;
+    color:#4fc3c3;
+}
+.invoice-container .body .paymethod-grandtotal-container{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px 0 30px;
+    align-items:flex-end;
+}
+.invoice-container .body .paymethod-grandtotal-container .paymethod-sec{
+    padding-left: 30px;
+}
+.invoice-container .body .paymethod-grandtotal-container .grandtotal-sec{
+    width: 200px;
+}
+.invoice-container .body .paymethod-grandtotal-container .grandtotal-sec p{
+    display:flex;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.invoice-container .body .paymethod-grandtotal-container .grandtotal-sec p span{
+    padding:0 10px;
+}
+.invoice-container .body .paymethod-grandtotal-container .grandtotal-sec p span:first-child{
+    width: 120px;
+}
+.invoice-container .body .paymethod-grandtotal-container .grandtotal-sec p span:last-child{
+    width:40%;
+    text-align:right;
+}
+.invoice-container .body .paymethod-grandtotal-container .grandtotal-sec p:last-child span{
+    padding:10px;
+    background:#4fc3c3;
+}
+.invoice-container .footer{
+    padding: 30px;
+}
+.invoice-container .footer > p{
+    color:#4fc3c3;
+    text-decoration:underline;
+    font-size:18px;
+    padding-bottom:5px;
+}
+.invoice-container .footer .terms{
+    font-size:16px;
+}
+#cartContent{
+    border:1px solid black;
+}
+.tableElement{
+    padding:5px 50px 5px 50px;
+    height:10px;
+}
+.seat1{
+    background-color:#F380C3;
+    border:1px solid;
+}
+.seat2{
+    background-color:#ECD5E3;
+    border:1px solid;
+}
+.seat3{
+    background-color: #FFD8BE;
+    border:1px solid;
+}
+.seat4{
+    background-color: #B6CFB6;
+    border:1px solid;
+}
+.invoice-container .body .main-table .table-header{
+    background: #4fc3c3;
+    display:flex;
+}
+.invoice-container .body .main-table .table-header{
+    color:white;
+}
+.invoice-container .body .main-table .col{
+    text-align:center;
+    padding:20px 50px 20px 50px ;
+}
+.invoice-container .body .main-table .col{
+    border:1px solid black;
+}
+.invoice-container .body .main-table .col-num{width:300px;}
+.invoice-container .body .main-table .col-price{width:500px;}
+.invoice-container .body .main-table .col-class{width:300px;}
+.returnBttn{
+    padding:5px;
+    margin-bottom:10px;
+}

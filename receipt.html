@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--Richard and Lambert-->
+<html lang="en">
+<head>
+    <title>Receipt</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/receipt.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src=receipt.js></script>
+</head>
+<body>
+    
+    <div class = "container">
+        
+        <div class=invoice-container>
+            <div class="header">
+                <div class="logo-invoice-container">
+                    <div class = logo-sec>
+                        <img class="logo" src="images/Turquoise Icon Logo.png">
+                        <div class="title-container">
+                            <p class="title bold">R & L Theatre</p>
+                            <p class="sub-title">Private Limited</p>
+                        </div>
+                    </div>
+                    <div class="invoice-sec">
+                        <p class="invoice bold">INVOICE</p>
+                        <p class="date">
+                            <span class = bold>Date</span>
+                            <span id="date"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="bill-total-container">
+                    <div class="bill-sec">
+                        <p>Bill To</p>
+                        <p class="bold name" id="customer-name">Name</p>
+                    </div>
+                    <div class="total-container">
+                        <p>Total Due</p>
+                        <p class="bold price total" id="total-price">$00.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="main-table">
+                    <div class="bold table-header">
+                        <div class="col col_num">Seat</div>
+                        <div class="col col-price">Price</div>
+                        <div class="col col-class">Class</div>
+                    </div>
+                    <div id="receipt-content"></div>
+                </div>
+                <div class="paymethod-grandtotal-container">
+                    <div>
+                    </div>
+                    <div class="grandtotal-sec">
+                        <p class="bold">
+                            <span>SUB TOTAL</span>
+                            <span id="sub-total">$00.00</span>
+                        </p>
+                        <p><span>Discount</span>
+                            <span id="discount-price">-$00.00</span>
+                        </p>
+                        <p>
+                            <span>Tax Val 10%</span>
+                            <span id="tax">$00.00</span>
+                        </p>
+                        <p class="bold bottom-payment">
+                            <span>TOTAL</span>
+                            <span class="total" id="total-price">$000.00</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="button" class="returnBttn" onclick="returnPage()">Go Back To Seat Selection</button>
+                <p>Thank You For Your Purchase</p>
+                <div class="terms">
+                    <p class="bold">Terms & Conditions</p>
+                    <p>No Refunds, all sales are final. By accessing this website, you are 
+                        agreeing to be bound by this website's and service's Terms and 
+                        Conditions of Service, the Privacy Policy, all 
+                        applicable laws and regulations, and agree that 
+                        you are responsible for compliance with any applicable 
+                        local laws. We may modify these Terms and Conditions at any time 
+                        without notice to you by posting revised Terms and Conditions of Service. 
+                        Your use of the website constitutes your binding acceptance of these Terms
+                         and Conditions of Service, including any modifications that we make. If you
+                          do not agree with any of these terms, you are prohibited from using or 
+                          accessing this service. The materials contained in this website, theater, and service are 
+                          protected by applicable copyright and trademark law.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<html>
